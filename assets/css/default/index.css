@@ -227,10 +227,7 @@ margin-top: 0.5em;
    
 
 }
-.destaque:target {
-    background-color: blue;
-        
-      }
+
 
 .modal{
     overflow: hidden;
@@ -246,10 +243,7 @@ margin-top: 0.5em;
     padding: 0em 1em 1em 1em;
     font-size: 1.5em;
 }
-.modal:target{
-    display: block;
 
-}
 .modal-header{
     width: 100%;
 }
