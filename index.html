@@ -3,50 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#590303">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
 
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lemonada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/mostrarPoema.js"></script>
+    <link rel="stylesheet" href="assets/css//default/index.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="assets/css//media/index.css">
 </head>
 
 <body>
     <header>
-    <nav>
-        <ul>
-            <li>
-                <a href="">Ínicio</a>
-            </li>
-            <li>
-                <a href="">Destaques</a>
-            </li>
-            <li>
-                <a href=""> Poemas</a>
-            </li>
-            <li>
-                <a href="">Resenhas</a>
-            </li>
-            <li>
-                <a href="">Contatos</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+        <nav>
+            <ul>
+                <li id="home">
+                    <a href="" class="material-icons">home</a>
+                </li>
+                <li>
+                    <a href="#destaqueSection">Destaques</a>
+                </li>
+                <li>
+                    <a href="#poemaSection">Poemas</a>
+                </li>
+                <li>
+                    <a href="#resenhaSection">Resenhas</a>
+                </li>
+                <li>
+                    <a href="">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <nav id="fixa">
         <ul>
-            <li>
-                CV
-            </li>
+            <a target="_blank" title="CV" href="https://raphaelbrodrigues.github.io">
+                <li class="material-icons">
+                    person
+                </li>
+            </a>
+            <a target="_blank" title="Repositório" href="https://github.com/RaphaelBRodrigues/trabalhoWeb">
+                <li class="material-icons">
+                    save
+                </li>
+            </a>
+
         </ul>
     </nav>
     <div id="main">
-        <img id="main-imagem-1"
-            src="https://i1.wp.com/socientifica.com.br/wp-content/uploads/2019/05/image_7150_1e-Hubble-Legacy-Field.jpg?fit=1920%2C1773&ssl=1"
-            alt="">
-        <img id="main-imagem-2"
-            src="https://img.ibxk.com.br/2020/01/30/30021141299110.jpg?w=1120&h=420&mode=crop&scale=both" alt="">
+        <img id="main-imagem-1" src="https://i1.wp.com/socientifica.com.br/wp-content/uploads/2019/05/image_7150_1e-Hubble-Legacy-Field.jpg?fit=1920%2C1773&ssl=1" alt="">
+        <img id="main-imagem-2" src="https://img.ibxk.com.br/2020/01/30/30021141299110.jpg?w=1120&h=420&mode=crop&scale=both" alt="">
     </div>
     <div id="content">
         <h1>Destaques</h1>
@@ -94,103 +102,146 @@
         <section id="poemaSection">
             <ul>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Ao menos tente</div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Ao menos tente</div> <span class="data">20/20/20</span>
+                    </a>
 
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Assim como os que já escrevi </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Assim como os que já escrevi </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Árduo amor </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Árduo amor </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Va Paixão </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Va Paixão </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Ó Poesia </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Ó Poesia </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">a Menina </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">a Menina </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Linguagem de amarração </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Linguagem de amarração </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Enquanto </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Enquanto </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Ingente Labor </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Ingente Labor </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Desolado sem você ao meu lado Labor </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Desolado sem você ao meu lado Labor </div> <span
+                            class="data">20/20/20</span>
+                    </a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Sortilégio </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Sortilégio </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Fingias </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Fingias </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Lamento </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Lamento </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Dentre todas é você </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Dentre todas é você </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Sem sentido </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Sem sentido </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Será </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Será </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Escadaria </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Escadaria </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Você </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Você </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Camila </div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Camila </div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">mode_edit</i><div class="nomePoema">Menina do céu</div> <span class="data">20/20/20</span></a>
+                    <a href="#"><i class="material-icons">mode_edit</i>
+                        <div class="nomePoema">Menina do céu</div> <span class="data">20/20/20</span>
+                    </a>
                 </li>
 
             </ul>
         </section>
         <h1>Resenhas</h1>
         <section id="resenhaSection">
-            <div>
+            <div class="resenha">
                 <center>
-                <h2>Os Irmãos Karamavoz</h2>
-                <h3>Fiódor Dostoiévski</h3>
-                <img src="http://lojasaraiva.vteximg.com.br/arquivos/ids/12115848/1008609552.jpg?v=637142273191770000" onmouseover="capa();" id="karamazov">
-                <button class="material-icons">visibility</button>
-            </center>
+                    <h2>Os Irmãos Karamavoz</h2>
+                    <h3>Fiódor Dostoiévski</h3>
+                    <img src="http://lojasaraiva.vteximg.com.br/arquivos/ids/12115848/1008609552.jpg?v=637142273191770000"
+                        onmouseover="capa();" id="karamazov">
+                    <button class="material-icons">visibility</button>
+                </center>
             </div>
 
-            <div>
+            <div class="resenha">
                 <center>
-                <h2>Homero</h2>
-                <h3>Ilíada</h3>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/81QejIL7LZL.jpg" onmouseover="capa();" id="karamazov">
-                <button class="material-icons">visibility</button>
-            </center>
+                    <h2>Homero</h2>
+                    <h3>Ilíada</h3>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81QejIL7LZL.jpg" onmouseover="capa();"
+                        id="karamazov">
+                    <button class="material-icons">visibility</button>
+                </center>
             </div>
-            <div>
+            <div class="resenha">
                 <center>
-                <h2>Os Irmãos Karamavoz</h2>
-                <h3>A Guerra dos mundos</h3>
-                <img src="http://lojasaraiva.vteximg.com.br/arquivos/ids/12107444/1008975936.jpg?v=637142242124430000" onmouseover="capa();" id="karamazov">
-                <button class="material-icons">visibility</button>
-            </center>
+                    <h2>Os Irmãos Karamavoz</h2>
+                    <h3>A Guerra dos mundos</h3>
+                    <img src="http://lojasaraiva.vteximg.com.br/arquivos/ids/12107444/1008975936.jpg?v=637142242124430000"
+                        onmouseover="capa();" id="karamazov">
+                    <button class="material-icons">visibility</button>
+                </center>
             </div>
         </section>
     </div>
     <footer>
-        <h3>NomeProjeto</h3>
-        <h4><sub><q><i>Que Zéfiro toque seus cabelos,quando eu for incapaz de fazê-lo</i></q></sub></h4>
+        <h4><q><i>Que Zéfiro toque seus cabelos,quando eu for incapaz de fazê-lo</i></q></h4>
 
     </footer>
     </footer>
