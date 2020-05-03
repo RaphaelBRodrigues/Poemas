@@ -67,10 +67,16 @@ header nav ul li{
     border: 1px solid black;
     display: block;
     height: 3em;
+    width: 3em;
+
     background-color:hsl(0, 95%, 8%);
     box-shadow:0 0 10px black;
+    transition-duration: 0.5s;
 }
-
+#fixa ul li:hover{
+    background-color: black;
+    width: 4em;
+}
 a{
     color:white;
     text-decoration: none;
@@ -89,6 +95,13 @@ a{
 }
 #main img{
 width: 100%;
+}
+#main-image{
+    background-image: url("    https://img.ibxk.com.br/2020/01/30/30021141299110.jpg?w=1120&h=420&mode=crop&scale=both    ");
+    background-size: 100%;
+    transition-duration: 2s;
+    width: 100%;
+    height: 60vh;
 }
 #main-imagem-1{
     z-index: 5;
@@ -195,7 +208,12 @@ box-sizing: border-box;
 height: 100%;
 margin-right: 0.5em;
 text-align: center;
+transition-duration: 0.3s;
 }
+#poemaSection ul li a i:hover{
+background:#260101;
+}
+
 .nomePoema,.nomeResenha{
     padding-top: 1.8em;
     font-style: italic;
