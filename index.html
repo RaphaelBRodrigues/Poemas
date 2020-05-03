@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lemonada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="assets/js/mostrarPoema.js"></script>
+    <script src="assets/js/conteudo.js"></script>
     <link rel="stylesheet" href="assets/css//default/index.css">
     <link rel="stylesheet" media="screen and (max-width:1000px)" href="assets/css//media/index.css">
 </head>
@@ -53,6 +53,75 @@
         </ul>
     </nav>
 
+    <center>
+                
+        <div id="modalPoema" class="modal">
+            <div class="modal-header">
+                <a class="modalFechar" onclick="fecharModal();">X</a>
+                    
+                    <center>
+                        
+                        <h2>
+                          <i id="poemaTitulo">                            
+                        </i>
+
+                    
+                </h2>
+              
+            </center>
+            </div>
+            <hr>
+            <div class="modal-content" >
+                <q id="poemaTexto">
+
+                </q>
+            </div>
+          <small> <i> <span id="data"></span> </i> </small>
+
+            <hr>
+            <div class="modal-footer">
+                <small>&copy Todos os poemas são de <b> <abbr title="Raphael Barbosa Rodrigues"> minha  </abbr></b> autoria </small>    
+            
+            </div>
+        </div>
+    </center>
+
+    <center>
+                
+        <div id="modalResenha" class="modal">
+            <div class="modal-header">
+                <a class="modalFechar"  onclick="fecharModal();">X</a>
+                    
+                    <center>
+                        
+                        <h2>
+                          <i id="resenhaTitulo">     
+                                               Indisponível
+               
+                        </i>
+
+
+                    
+                </h2>
+              
+            </center>
+            </div>
+            <hr>
+            <div class="modal-content" >
+                <q id="resenhaTexto">
+                        Não há resenhas disponíveis.
+                </q>
+            </div>
+          <small> <i> <span id="data"></span> </i> </small>
+
+            <hr>
+            <div class="modal-footer">
+                <small>&copy Todos as resenhas são de <b> <abbr title="Raphael Barbosa Rodrigues"> minha  </abbr></b> autoria </small>    
+            
+            </div>
+        </div>
+    </center>
+
     <div id="main">
         <img id="main-imagem-1"
             src="https://www.snpcultura.org/imagens/letras_20170519_pc.jpg"
@@ -62,7 +131,7 @@
     </div>
     <div id="content">
         <h1>Destaques</h1>
-        <section id="destaqueSection">
+        <section  onmouseover="getPoemas()" id="destaqueSection">
             <div class="destaque">
                 <center>
                     <img src="https://i1.wp.com/socientifica.com.br/wp-content/uploads/2019/05/image_7150_1e-Hubble-Legacy-Field.jpg?fit=1920%2C1773&ssl=1"
@@ -76,7 +145,7 @@
                     </p>
 
                 </center>
-                <button class="material-icons">visibility</button>
+                <button onclick="mostrarPoema('poema1')" class="material-icons">visibility</button>
 
             </div>
 
@@ -96,7 +165,7 @@
                     </p>
 
                 </center>
-                <button class="material-icons">visibility</button>
+                <button onclick="mostrarPoema('poema4')" class="material-icons">visibility</button>
 
             </div>
 
@@ -104,36 +173,8 @@
 
         <h1> Poemas</h1>
         <section id="poemaSection">
-            <center>
-                <div id="modalPoema" class="modal">
-                    <div class="modal-header">
-                                               
-                            <center>
-                                
-                                <h2>
-                                  <i id="poemaTitulo">                            
-                                </i>
-
-                            <sup> <a href="#poemaSection" onclick="fecharModal();">X</a>
-                            </sup>  
-                        </h2>
-                      
-                    </center>
-                    </div>
-                    <hr>
-                    <div class="modal-content" >
-                        <q id="poemaTexto">
-                            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to di
-                        </q>
-                    </div>
-                    <hr>
-                    <div class="modal-footer">
-                        <small>&copy Todos os poemas são de minha autoria</small>    
-                    
-                    </div>
-                </div>
-            </center>
-            <ul>
+           
+            <ul onmouseover="getPoemas()">
                 <li>
                     <a id="poema1" onclick="mostrarPoema(this.id)" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Ao menos tente</div> <span class="data">20/20/20</span>
@@ -142,100 +183,100 @@
                 </li>
 
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema2" onclick="mostrarPoema(this.id)" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Assim como os que já escrevi </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema3" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Árduo amor </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema4" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Va Paixão </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema5" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Ó Poesia </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema6" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">a Menina </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema7" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Linguagem de amarração </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema8" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Enquanto </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema9" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Ingente Labor </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema10" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Desolado sem você ao meu lado Labor </div> <span
                             class="data">20/20/20</span>
                     </a>
                 </li>
             </ul>
-            <ul>
+            <ul onmouseover="getPoemas()">
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema11" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Sortilégio </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema12" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Fingias </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema13" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Lamento </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema14" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Dentre todas é você </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema15" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Sem sentido </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema16" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Será </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema17" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Escadaria </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema18" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Você </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema19" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Camila </div> <span class="data">20/20/20</span>
                     </a>
                 </li>
                 <li>
-                    <a id="poema1" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
+                    <a id="poema20" onclick="mostrarPoema(this.id)"><i class="material-icons">mode_edit</i>
                         <div class="nomePoema">Menina do céu</div> <span class="data">20/20/20</span>
                     </a>
                 </li>
@@ -243,14 +284,16 @@
             </ul>
         </section>
         <h1>Resenhas</h1>
+      
         <section id="resenhaSection">
+            
             <div class="resenha">
                 <center>
                     <h2>Os Irmãos Karamavoz</h2>
                     <h3>Fiódor Dostoiévski</h3>
                     <img src="http://lojasaraiva.vteximg.com.br/arquivos/ids/12115848/1008609552.jpg?v=637142273191770000"
                         onmouseover="capa();" id="karamazov">
-                    <button class="material-icons">visibility</button>
+                    <button onclick="mostrarResenha();" class="material-icons">visibility</button>
                 </center>
             </div>
 
@@ -260,7 +303,7 @@
                     <h3>Ilíada</h3>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/81QejIL7LZL.jpg" onmouseover="capa();"
                         id="karamazov">
-                    <button class="material-icons">visibility</button>
+                    <button onclick="mostrarResenha();"  class="material-icons">visibility</button>
                 </center>
             </div>
             <div class="resenha">
@@ -269,7 +312,7 @@
                     <h3>A Guerra dos mundos</h3>
                     <img src="http://lojasaraiva.vteximg.com.br/arquivos/ids/12107444/1008975936.jpg?v=637142242124430000"
                         onmouseover="capa();" id="karamazov">
-                    <button class="material-icons">visibility</button>
+                    <button onclick="mostrarResenha();"  class="material-icons">visibility</button>
                 </center>
             </div>
         </section>
