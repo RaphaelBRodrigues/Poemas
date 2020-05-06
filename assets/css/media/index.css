@@ -60,3 +60,11 @@ footer{
 h1{
     width: 60% !important;
 }
+#blocoContatos img {
+margin-right: auto;
+margin-left: auto;
+display: block;
+}
+#skoob{
+    transform: scale(1.1);
+}
