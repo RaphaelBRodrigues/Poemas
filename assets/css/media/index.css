@@ -3,11 +3,33 @@ body{
     width: 100%;
 
 }
-#home{
-    width: 2.2em;
-    padding: 0em 0.8em 0.1em;
-    height: 2.2em;
+
+header nav{
+    height: 4em;
+
 }
+
+
+#home{
+    height: 100%;
+    border-left:1px solid black ;
+    width: 15%;
+    padding: 1.2em 0em 0em 1em;
+
+}
+#menuButton{
+    height: 2em;
+    width: 10%;
+    padding: 0.7em 0em 0em 1em;
+    position: absolute;
+    left:82%;
+
+}
+#collapse{
+    display: none;
+   margin-left: 1em; 
+}
+
 #fixa ul li{
     width: 2.2em;
     padding: 0.5em 0 0 0.1em;
@@ -64,6 +86,9 @@ h1{
 margin-right: auto;
 margin-left: auto;
 display: block;
+}
+#menuButton{
+    display: inherit;
 }
 #skoob{
     transform: scale(1.1);
