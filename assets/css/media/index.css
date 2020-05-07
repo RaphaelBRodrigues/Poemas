@@ -51,8 +51,8 @@ header nav ul li{
     opacity: 0;
     transition-duration:1.5s,1.5s,1s,0s ;
     transition-property:height,top,opacity,display;
-    box-shadow: 0px 00px 20px black;
-
+    box-shadow: 0px 0px 2px black;
+    border-bottom: 3px solid #000;
     
 }
 #fixa ul{

@@ -1,30 +1,28 @@
 var click = 0;
 var menu;
-window.onload = function(){
-    menu  = document.getElementById("collapse");
-    }
 
 
     function menuClick() {
     if((click%2) == 0){
-        menu.style.display = "inherit";
-        menu.style.opacity = "1";
-        menu.style.height = "16em";
-        menu.style.top = "4em";
-        
+        abrirMenu();
     }else{
-        menu.style.opacity = "0";
-        menu.style.height = "0";
-        menu.style.top = "-16em";
-
+        fecharMenu();
     }
     click++;
 }
 function abrirMenu(){
-    menu.style.display = "inherit !important";
-
+    menu.style.display = "inherit";
+    menu.style.opacity = "1";
+    menu.style.height = "16em";
+    menu.style.top = "4em";
 }
 function fecharMenu(){
-    menu.style.display = "none";
-
+    menu.style.opacity = "0";
+    menu.style.height = "0";
+    menu.style.top = "-16em";
+}
+window.onload = function(){
+    menu  = document.getElementById("collapse");
+    abrirMenu();
+    fecharMenu();
 }
