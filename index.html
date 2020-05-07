@@ -10,8 +10,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lemonada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="assets/js/conteudo.js"></script>
-    <script src="assets/js/carrosel.js"></script>
     <link rel="stylesheet" href="assets/css/default/index.css">
     <link rel="stylesheet" media="screen and (max-width:1000px)" href="assets/css/media/index.css">
 </head>
@@ -23,6 +21,9 @@
                 <li id="home">
                     <a href="" class="material-icons">home</a>
                 </li>
+                <li id="menu" onclick="menuClick();">
+                    <span id="menuButton" class="material-icons">menu</span>
+                </li>    
                 <div id="collapse">
                 <li>
                     <a href="#destaqueSection">Destaques</a>
@@ -37,9 +38,7 @@
                     <a href="#contatosSection">Contatos</a>
                 </li>
             </div>
-            <li id="menu">
-                <span onclick="menu()" id="menuButton" class="material-icons">menu</span>
-            </li>        
+             
             </ul>
                   
         </nav>
@@ -342,3 +341,6 @@
 </body>
 
 </html>
+<script src="assets/js/conteudo.js"></script>
+<script src="assets/js/carrosel.js"></script>
+<script src="assets/js/menu.js"></script>

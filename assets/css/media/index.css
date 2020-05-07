@@ -8,13 +8,19 @@ header nav{
     height: 4em;
 
 }
+header nav ul{
+    display: block;
+}
+header nav ul li{
+    display: inline;
+}
 
 
 #home{
-    height: 100%;
-    border-left:1px solid black ;
-    width: 15%;
-    padding: 1.2em 0em 0em 1em;
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    padding: 1.2em 0em 0em 1.3em;
 
 }
 #menuButton{
@@ -23,22 +29,50 @@ header nav{
     padding: 0.7em 0em 0em 1em;
     position: absolute;
     left:82%;
+    display: inherit;
 
+}
+
+#collapse li{
+    transition-duration: 1s;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    height: 4em;
 }
 #collapse{
+    transition-duration: 1s;
+    position: relative;
+    top:-16em;
     display: none;
-   margin-left: 1em; 
-}
+    background-color:#260101;
+    height: 0;
+    opacity: 0;
+    transition-duration:1.5s,1.5s,1s,0s ;
+    transition-property:height,top,opacity,display;
+    box-shadow: 0px 00px 20px black;
 
+    
+}
+#fixa ul{
+    width: 4em;
+}
 #fixa ul li{
-    width: 2.2em;
-    padding: 0.5em 0 0 0.1em;
-    height: 2.2em;
+    width: 100%;
+    padding: 0.9em 0 0 0.1em;
+    height: 3em;
+    box-shadow:0 0 10px black;
+
 }
 section{
     display: block;
 }
-.main img{
+#main{
+    margin-top: 0;
+    width: 100%;
+}
+#main img{
     width: 100%;
 }
 
@@ -87,9 +121,7 @@ margin-right: auto;
 margin-left: auto;
 display: block;
 }
-#menuButton{
-    display: inherit;
-}
+
 #skoob{
     transform: scale(1.1);
 }
