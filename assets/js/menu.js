@@ -30,14 +30,18 @@ function fecharMenu(){
     menu.style.top = "-16em";
     }
 }
-window.onload = function(){
-    menu  = document.getElementById("collapse");
-    abrirMenu();
-    fecharMenu();
+
+function menuDesktop(){
     if(screen.width>999){
         menu.style.display = "inherit";
         menu.style.opacity = "1";
         menu.style.height = "4em";
         menu.style.top = "4em";
 }
+}
+window.onload = function(){
+    menu  = document.getElementById("collapse");
+    abrirMenu();
+    fecharMenu();
+    menuDesktop();
 }
