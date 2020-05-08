@@ -8,9 +8,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: cursive;
-
     color:#F2B199;
+    /*animation: fundo 7s linear;*/
 }
+/*
+@keyframes fundo{
+    0%{background-color: #260101;}
+    100%{background-color: #F2B199;}
+}*/
 li{
     list-style: none;
 
@@ -63,24 +68,42 @@ header nav ul li,header nav ul div li{
 #home{
     box-sizing: border-box;
     width:5.5%;
+    height: 4em;
     padding:1.2em 0em 1.7em 1.5em;
     box-shadow: 0 0 10px black;
 }
 #home:hover{
     background-color: black;
-    border-radius: 100%;
+    /*border-radius: 100%;
     transform: rotate(360deg);
-}
-#fixa{
+*/}
+.fixa{
     position: fixed;
  
-    margin-top:-1.5em;
     z-index: 9999;
-    width: 5%;
 
 
 }
-#fixa ul{
+#linkExternos{
+    margin-top:-1.5em;
+    width: 5%;
+
+}
+#seta{
+    left: 93%;
+    top:80vh
+}
+#seta ul li{
+    border-radius: 95%;
+    height: 2.5em;
+    width: 2.5em;
+    padding: 0.7em 0 0 0;
+}
+#seta ul li:hover{
+    transform: rotate(360deg);
+
+}
+.fixa ul{
     text-align: center;
     padding: 0;
     padding-top:0.5em;
@@ -88,7 +111,7 @@ header nav ul li,header nav ul div li{
     
     
 }
-#fixa ul li{
+.fixa ul li{
     padding: 1em 0 0 0;
     box-sizing: border-box;
     border: 1px solid black;
@@ -100,7 +123,7 @@ header nav ul li,header nav ul div li{
     box-shadow:0 0 10px black;
     transition-duration: 0.5s;
 }
-#fixa ul li:hover{
+.fixa ul li:hover{
     background-color: black;
     width: 4em;
 }
@@ -206,16 +229,17 @@ button{
     border: 0;
     padding: 0.3em 0.3em 0.3em 0.3em;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+button:hover{
+    filter: grayscale(50%);
+
 }
 #poemaSection ul {
     width: 100%;
 
 }
-#poemaSection ul li{
-    box-shadow: 0px 00px 20px black;
-    
 
-}
 
 #poemaSection ul li a{
 background-color: #590303;
@@ -226,7 +250,11 @@ height: 5em;
 cursor: pointer;
 
 }
+#poemaSection ul li a:hover{
+    filter: grayscale(30%);
 
+
+}
 #poemaSection ul li a i{
 background-color:#400101;
 width: 15%;
@@ -237,9 +265,9 @@ margin-right: 0.5em;
 text-align: center;
 transition-duration: 0.3s;
 }
-#poemaSection ul li a i:hover{
+/*#poemaSection ul li a i:hover{
 background:#260101;
-}
+}*/
 
 .nomePoema,.nomeResenha{
     padding-top: 1.8em;
@@ -265,15 +293,37 @@ margin-top: 0.5em;
 }
 #resenhaSection div{
     width: 25%;
-
+    color:#590303;
 }
 #resenhaSection div center img{
     width: 100%;
    
 
 }
-
-
+.verMais{
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 0.3em 0 0.7em 0.3em;
+    font-size:2em;
+    width: 10em;
+    white-space: nowrap;
+    height: 2em;
+    color:white;
+    padding-top: 0em;
+}
+.verMais .texto{
+    top: 0.25em;
+    position: relative;
+}
+.verMais .material-icons{
+    box-sizing: border-box;
+    top: 0.35em;
+    position: relative;
+    font-size: 1em;
+    margin-left: 0.1em;
+}
 .modal{
     overflow-y: scroll;
     z-index: 9999;
@@ -326,6 +376,10 @@ left: 40%;
     height: 9em;
     margin-bottom: 1em;
     border-radius: 100%;
+    transition-duration: 1s;
+}
+#blocoContatos img:hover{
+    transform: rotate(360deg);
 }
 
 /* Color Theme Swatches in Hex */

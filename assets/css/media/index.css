@@ -19,8 +19,8 @@ header nav ul li{
 #home{
     position: absolute;
     height: 4em;
-    width: 4em;
-    padding: 1.2em 0em 0em 1.3em;
+    width: 4.5em;
+    padding: 1.2em 0em 0em 1.5em;
 
 }
 #menuButton{
@@ -124,4 +124,9 @@ display: block;
 
 #skoob{
     transform: scale(1.1);
+}
+#seta{
+    left: 80%;
+    top:78vh;
+    display:none;
 }

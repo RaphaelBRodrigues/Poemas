@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poemas</title>
 
-
+    <link rel="shortcut icon" href="https://uma36.info/wp-content/uploads/2019/06/poetry-books-clipart-pmg-filequill-and-inksvg-wikipedia-clipart-pmg-books-poetry-.png">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lemonada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/default/index.css">
@@ -43,7 +43,7 @@
                   
         </nav>
     </header>
-    <nav id="fixa">
+    <nav class="fixa" id="linkExternos">
         <ul>
             <a target="_blank" title="CV" href="https://raphaelbrodrigues.github.io">
                 <li class="material-icons">
@@ -58,6 +58,13 @@
 
         </ul>
     </nav>
+    <div class="fixa" id="seta">
+        <ul>
+            <li class="material-icons" onclick="subir()">
+                arrow_upward
+                 </li>
+        </ul>
+    </div>
 
     <center>
                 
@@ -313,14 +320,16 @@
             </div>
             <div class="resenha">
                 <center>
-                    <h2>Os Irmãos Karamavoz</h2>
-                    <h3>A Guerra dos mundos</h3>
+                    <h2>A Guerra dos mundos</h2>
+                    <h3>H.G Wells</h3>
                     <img src="http://lojasaraiva.vteximg.com.br/arquivos/ids/12107444/1008975936.jpg?v=637142242124430000"
                         onmouseover="capa();" id="karamazov">
                     <button onclick="mostrarResenha();"  class="material-icons">visibility</button>
                 </center>
             </div>
+            
         </section>
+        <button onclick="mostrarLivros()" class="verMais"><span class="texto" id="verMaisLivros"> Ver Mais </span><span id="verMaisLivrosIcon" class="material-icons">visibility</span></button>
 
         <h1>Contatos</h1>
         <section id="contatosSection">
@@ -344,3 +353,4 @@
 <script src="assets/js/conteudo.js"></script>
 <script src="assets/js/carrosel.js"></script>
 <script src="assets/js/menu.js"></script>
+<script src="assets/js/scroll.js"></script>

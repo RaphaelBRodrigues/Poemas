@@ -51,6 +51,23 @@ function fecharModal() {
 function mostrarResenha(){
     document.getElementById("modalResenha").style.display = "block";
     document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+}
 
+var clickLivros = 1;
+var verMaisLivros = document.getElementById("verMaisLivros");
+var verMaisLivrosIcon = document.getElementById("verMaisLivrosIcon");
+var livrosHidden = document.getElementById("livrosHidden");
+function mostrarLivros(){
 
+        if(clickLivros % 2 == 0){
+            verMaisLivros.innerHTML = "Ver Mais ";
+            verMaisLivrosIcon.innerHTML = " visibility";
+            livrosHidden.style.display = "inherit";
+        }else{
+            verMaisLivros.innerHTML = "Ver Menos ";
+            verMaisLivrosIcon.innerHTML = " visibility_off";
+            livrosHidden.style.display = "none";
+
+        }
+    clickLivros++;
 }
